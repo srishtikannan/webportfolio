@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srishti Kannan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header" id="navbar">
+        <nav class="navbar">
+          <a href="index.html" class="logo">Srishti Kannan</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Portfolio</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.pdf" target="_blank">Resume</a> 
+                <a href="#contact" id="contactButton" class="contact">Contact Me</a>
+                <a href="https://www.linkedin.com/in/srishti-kannan/" class="social-link" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/srishtikannan" class="social-link" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </nav>
+    </header>  
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi!</h1>
+            <h1>I'm <span>Srishti<br></span>An Aspiring Data Scientist</h1>  
+            <p>I became passionate about data science through a combination of curiosity, exposure, and personal interest. It started with a fascination for numbers and patterns, from my childhood. The more I learned, the more I realized the immense potential of data science to solve real-world problems and make a positive impact.</p><br><p>I am currently reside in Dallas, TX and am looking for an opportunity for the Fall of 2024 so I can gain additional experience while sharing and enhancing my skillset. I've shared some of my projects and experiences on this portfolio! Feel free to reach out or connect with me!</p>
+            
+        </div>
+        <div class="img-box">
+            <img src="headshot.jpg">
+        </div>
+    </section>
+    <section class="interests-section">
+        <h2>Areas of Interest</h2>
+        <p>Take a look at some of the things I love working on!</p>
+        <div class="interests-container">
+          <div class="interest-item">
+            <i class='bx bxs-conversation'></i> 
+            <h3 class="interest-heading">NLP</h3>
+            <p>I have worked with NLP techniques to make sense of the motivation behind human interactions.</p>
+          </div>
+          <div class="interest-item">
+            <i class='bx bxs-brain'></i>
+            <h3 class="interest-heading">Machine Learning</h3>
+            <p>I love the math and theory behind machine learning, as well as the implementation.</p>
+        </div>
+        <div class="interest-item">
+            <i class='bx bxs-bar-chart-square'></i>
+            <h3 class="interest-heading">Data Analytics</h3>
+            <p>I love telling stories using compelling presentations.</p>
+        </div>
+      </section>
+      <section class="contact-me" id="contact">  
+        <h2>Contact Me</h2>
+        <form>
+          <div class="form-group">
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Enter the subject">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    <script>
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            var header = document.getElementById("navbar");
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                header.classList.add("navbar-transparent");
+            } else {
+                header.classList.remove("navbar-transparent");
+            }
+        }
+    </script>
+</body>
+</html>

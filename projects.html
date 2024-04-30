@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srishti Kannan Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header" id="navbar">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Srishti Kannan</a>
+            <div class="nav-links">
+                <a href="index.html">Portfolio</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="resume.pdf" target="_blank">Resume</a> 
+                <a href="index.html#contact" id="contactButton" class="contact">Contact Me</a>
+                <a href="https://www.linkedin.com/in/srishti-kannan/" class="social-link" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/srishtikannan" class="social-link" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </nav>        
+    </header>  
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-item large">
+                <div class="project-details">
+                    <h2>DoThatDance</h2>
+                    <h3>ACM Projects</h3>
+                </div>
+                <div class="project-image">
+                    <img src="project1.png" alt="Large Project Image">
+                    <h4>Aug 2023 - Dec 2023</h4>
+                    <p>Modern video streaming service for dancers</p>
+                </div>
+                <a href="https://github.com/acm-projects/DoThatDance" class="visit" style="display: block; margin: 20px auto; padding: 10px 20px; max-width: 200px; background-color: rgb(55, 136, 223); color: white; text-decoration: none; border-radius: 4px; text-align: center;" target="_blank">Visit</a>
+            </div>
+            <div class="project-item">
+                <div class="project-details">
+                    <h2>iRecognize</h2>
+                    <h3>Personal Project</h3>
+                </div>
+                <div class="project-image">
+                    <img src="project3.png" alt="Small Project Image">
+                    <h4>Mar 2023 - Apr 2023</h4>
+                    <p>Facial recognition convolutional neural network algorithm (Still working on this project so for now I've just linked my GitHub home page)</p>
+                    <a href="https://github.com/srishtikannan" class="visit" style="display: block; margin: 20px auto; padding: 10px 20px; max-width: 200px; background-color: rgb(55, 136, 223); color: white; text-decoration: none; border-radius: 4px; text-align: center;" target="_blank">Visit</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-details">
+                    <h2>TrendWise</h2>
+                    <h3>Personal Project</h3>
+                </div>
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Small Project Image">
+                    <h4>June 2023 - Aug 2023</h4>
+                    <p>LSTM model modern stock market trend prediction web application (Still working on this project so for now I've just linked my GitHub home page)</p>
+                    <a href="https://github.com/srishtikannan" class="visit" style="display: block; margin: 20px auto; padding: 10px 20px; max-width: 200px; background-color: rgb(55, 136, 223); color: white; text-decoration: none; border-radius: 4px; text-align: center;" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            var header = document.getElementById("navbar");
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                header.classList.add("navbar-transparent");
+            } else {
+                header.classList.remove("navbar-transparent");
+            }
+        }
+    </script>
+    </body>
+    </html>
